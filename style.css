@@ -1,3 +1,32 @@
 body {
     font-family: 'IBM Plex Mono', monospace;
+    background: #080808;
+    color: #1ecb35;
+    opacity: 0.8;
+    text-shadow: 0 0 5px rgba(30, 203, 53, 0.8);
+}
+
+#typing-header {
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0;
+    font-size: 2em;
+    display: inline-block;
+    position: relative; /* Added for positioning the cursor */
+}
+
+#typing-header::after {
+    content: '|';
+    animation: cursor-blink 1.2s infinite;
+    display: inline-block;
+    animation-delay: 3s;
+}
+
+@keyframes cursor-blink {
+    0%, 50% {
+        opacity: 0;
+    }
+    51%, 100% {
+        opacity: 1;
+    }
 }
