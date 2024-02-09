@@ -12,7 +12,7 @@ body {
     margin: 0;
     font-size: 2em;
     display: inline-block;
-    position: relative; /* Added for positioning the cursor */
+    position: relative;
 }
 
 #typing-header::after {
