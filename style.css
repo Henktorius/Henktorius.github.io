@@ -1,5 +1,5 @@
 body {
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'Josefin Sans', sans-serif;
     background: #080808;
     color: #1ecb35;
     opacity: 0.8;
@@ -8,7 +8,7 @@ body {
 
 #typing-header {
     overflow: hidden;
-    white-space: nowrap;
+    white-space: normal;
     margin: 0;
     font-size: 2em;
     display: inline-block;
@@ -29,4 +29,56 @@ body {
     51%, 100% {
         opacity: 1;
     }
+}
+
+#border-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 2px solid #1ecb35;
+}
+
+#content {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    overflow: auto;
+}
+
+#menu {
+    list-style: none;
+    font-size: 20px;
+    border: 2px solid #1ecb35;
+    width: fit-content;
+    padding: 0;
+    margin: 10px;
+    li {
+        margin: 10px;
+        cursor: pointer;
+    }
+
+    li:hover {
+        color: azure;
+        text-decoration: underline;
+        text-shadow: 0 0 12px rgba(30, 203, 53, 0.8);
+    }
+}
+
+.div-hor {
+    display: flex;
+}
+
+.div-vert {
+    display: flex;
+    flex-direction: column;
+}
+
+.box-test {
+    border: 2px solid #1ecb35;
+    margin: 10px;
+    flex-grow: 1;
 }
