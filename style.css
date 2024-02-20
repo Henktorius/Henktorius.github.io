@@ -34,31 +34,38 @@ body {
 #border-container {
     position: absolute;
     top: 0;
+    bottom: 0;
     left: 0;
     right: 0;
-    bottom: 0;
     border: 2px solid #1ecb35;
+    padding: 10px;
 }
 
+#content {
+    overflow: hidden;
+}
+/*
 #content {
     position: absolute;
     top: 10px;
     left: 10px;
     right: 10px;
     bottom: 10px;
-    overflow: auto;
+    overflow: hidden;
 }
+*/
 
 #menu {
     list-style: none;
     font-size: 20px;
     border: 2px solid #1ecb35;
     width: fit-content;
-    padding: 0;
     margin: 10px;
+    padding: inherit;
     li {
         margin: 10px;
         cursor: pointer;
+        white-space: nowrap;
     }
 
     li:hover {
@@ -70,11 +77,14 @@ body {
 
 .div-hor {
     display: flex;
+    height: 100%;
+    width: 100%;
 }
 
 .div-vert {
     display: flex;
     flex-direction: column;
+    width: fit-content;
 }
 
 .box-test {
