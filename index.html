@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hey there</title>
+    <script>
+        const name = "enktorius   ";
+        let index = -1;
+        function changeTitle() {
+            if(index < 0) {
+                document.title = "H";
+            }
+            else {
+                document.title += name[index];
+            }
+            index++;
+            if(index >= name.length) {
+                index = -1;
+            }
+        }
+
+        setInterval(changeTitle, 500);
+    </script>
+    <style>
+        body {
+            background-color: black;
+            font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+            color: blue;
+        }
+        p {
+            font-size: large;
+            font-weight: bold;
+        }
+        .big {
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            cursor: url('cr.gif'), auto;
+        }
+        .c {
+            align-items: center;
+            justify-content: center;
+        }
+        .cont {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            margin-top: 100px;
+        }
+        .doom {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 60%;
+            z-index: -1;
+        }
+        .mini {
+            font-size: smaller;
+        }
+        .m {
+            background-color: darkgray;
+            width: 40%;
+            border: 10px solid darkgoldenrod;
+            border-radius: 3px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="big">
+        <div class="cont">
+            <img src="sk.gif" alt="💀" />
+            <div class="c">
+                <h1>Welcome to my webpage</h1>
+                <h1 class="mini">enjoy your stay!!! (if you can >:) hehe)</h1>
+            </div>
+            <img src="sk.gif" alt="💀" />
+        </div>
+        <div class="m">
+            <p>Hello folks! Ready for some epic profile reading?</p>
+            <p>My name is Henktorius and as you can see...</p>
+            <p>I'm very proficient in making awesome webpages :o</p>
+        </div>
+        <div class="m">
+            <p>My pronouns? he/ll</p>
+            <p>My hobbies? Tomfoolery (HAHA JUST KIDDING!)</p>
+            <p>I like programming in rust and playing videogames</p>
+        </div>
+        <div class="m">
+            <p>Are you as cool as me? (I doubt it) Shoot me a message!</p>
+            <p>discord -> henktorius</p>
+            <p>github -> github.com/henktorius</p>
+        </div>
+        <img src="f.gif" alt="" class="doom" />
+    </div>
+</body>
+</html>
